@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<!--
+	Full Motion by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Full Motion</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/main.css" />
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		
+	
+
+ 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+		<style>
+			@font-face {
+			   font-family: myFirstFont;
+			   src: url(Sansation_Light.ttf);
+			}
+			@font-face {
+			   font-family: myfonts;
+			   src: url(Nexa-Bold.otf);
+			}
+			@font-face {
+			   font-family: mylightfont;
+			   src: url(Nexa-Light.otf);
+			}
+			body{
+				background-color: rgb(27, 24, 24)
+			}
+   
+		  
+		 </style>
+    </head>
+    <style>
+        @font-face {
+          font-family: myfonts;
+          src: url(Nexa-Light.otf);
+        }
+        @font-face {
+          font-family: myfont;
+          src: url(GrandHotel-Regular.otf);
+        }
+      
+        #container1{
+          height: 750px;
+                    background-image:url(beef-blur-close-up-1639563.jpg);
+                    background-size:cover;
+                    background-repeat: no-repeat;
+                    margin-top: 0px;
+                    background-position: center;
+                    margin-bottom: 0%;
+        }
+        #col6{
+          height: 500px;
+                    background-image:url(adults-chef-cook-2696064.jpg);
+                    background-size:cover;
+                    background-repeat: no-repeat;
+            margin-top: -64px;
+            margin-right: -10px;
+            padding: 10px;
+                  
+        }
+        #col5{
+          height: 500px;
+                    background-image:url(appetizers-chef-dining-2814829.jpg);
+                    background-size:cover;
+                    background-repeat: no-repeat;
+            margin-bottom: 0%;
+            margin-right: -10px;
+            padding: 10px;
+                  
+        }
+        @media only screen and (max-width: 700px){
+          .navbar-brand{
+            display: none;
+          }
+        }
+        
+        </style>
+        <body>
+        
+        
+            <nav class="navbar navbar-expand-lg navbar-light  fixed-top" id="navbar12" style="margin-top: 10px; background-color: transparent;">
+                <a class="navbar-brand" href="#" style="color: white;font-weight: bold;margin-left: 90px;">FOOD CORNER</a>
+        
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style="color: white;padding: 2px;">
+            <span class="navbar-toggler-icon" ></span>
+          </button>
+              
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01" >
+                
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="navbars">
+                
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;transition: 0.5s;font-family: myfonts;" data-target="#about">ABOUT US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" style="color: white;transition: 0.5s;font-family: myfonts;" style="border-bottom:1px solid white">OUR MENU </a>
+                  </li>
+                    <li class="nav-item">
+                    <a class="nav-link " href="#" style="color: white;transition: 0.5s;font-family: myfonts;">SPECIAL OFFER</a>
+                  </li>
+             
+                  <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;transition: 0.5s;font-family: myfonts; " data-toggle="modal" data-target="#cart"><i class="fas fa-shopping-cart"></i>My Cart (<span class="total-count"></span>)</a>
+                </li>
+        
+                <li class="dropdown">
+             
+              <a class=" dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" style="color: white;transition: 0.5s;font-family: myfonts;margin-top: 22px;margin-left: 280px;font-size: 15px;">
+                <?php  if (isset($_SESSION['username'])) : ?>
+                <font style="margin-right: 10px;">Welcome</font><?php echo $_SESSION['username']; ?>
+              </a>
+                
+            <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                aria-labelledby="navbarDropdownMenuLink-333">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="index.php?logout='1'" >Logout</a>
+              
+                <?php endif ?>
+        </div>
+        
+              
+              
+          
+        
+                 </div>
+                 </li>
+                 </ul>
+            </nav>
+            <script type="text/javascript" src="js/jquery-3.4.1.min.js">
+  
+            </script>
+            <!-- Bootstrap tooltips -->
+            <script type="text/javascript" src="js/popper.min.js"></script>
+            <!-- Bootstrap core JavaScript -->
+            <script type="text/javascript" src="js/bootstrap.min.js"></script>
+            <!-- MDB core JavaScript -->
+            <script type="text/javascript" src="js/mdb.min.js"></script>
+          </body>
